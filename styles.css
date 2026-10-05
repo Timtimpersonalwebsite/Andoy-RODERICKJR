@@ -1,0 +1,85 @@
+/* Custom Stylesheet for Roderick Andoy Jr. Portfolio */
+
+@layer base {
+  body {
+    font-family: 'Outfit', sans-serif;
+  }
+  .font-syne {
+    font-family: 'Syne', sans-serif;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050811;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Light Mode Overrides */
+body.light-theme {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+body.light-theme header {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: #cbd5e1;
+}
+
+body.light-theme header span {
+  color: #0f172a;
+}
+
+body.light-theme header nav a {
+  color: #475569;
+}
+
+body.light-theme #hero .lg\:col-span-7,
+body.light-theme #hero .lg\:col-span-5,
+body.light-theme #hero .lg\:col-span-4,
+body.light-theme #about .bg-slate-900\/60,
+body.light-theme #skills .bg-slate-900\/80,
+body.light-theme #projects .proj-card,
+body.light-theme #experience .p-6,
+body.light-theme #contact .bg-gradient-to-b {
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme #hero h1,
+body.light-theme #about h3,
+body.light-theme #skills h3,
+body.light-theme #skills h4,
+body.light-theme #projects h3,
+body.light-theme #projects h4,
+body.light-theme #experience h3,
+body.light-theme #experience h4,
+body.light-theme #contact h3 {
+  color: #0f172a;
+}
+
+body.light-theme input,
+body.light-theme textarea {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+body.light-theme footer {
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
